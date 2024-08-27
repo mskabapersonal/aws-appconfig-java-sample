@@ -35,50 +35,50 @@ Refer to Getting Started guide and 3 ways how Amazon Q Developer agent for code 
 8. Under Configuration source, choose AWS AppConfig hosted configuration.Under Content, choose JSON, paste the following content, and then choose Next.
 
 ```
-    {
-  "movies": [
-    {
-      "id": 1,
-      "movieName": "The Shawshank Redemption"
-    },
-    {
-      "id": 2,
-      "movieName": "City of God"
-    },
-    {
-      "id": 3,
-      "movieName": "Memento"
-    },
-    {
-      "id": 4,
-      "movieName": "The Intouchables"
-    },
-    {
-      "id": 5,
-      "movieName": "Stardust"
-    },
-    {
-      "id": 6,
-      "movieName": "Apocalypto"
-    },
-    {
-      "id": 7,
-      "movieName": "Taxi Driver"
-    },
-    {
-      "id": 8,
-      "movieName": "No Country for Old Men"
-    },
-    {
-      "id": 9,
-      "movieName": "Planet 51"
-    },
-    {
-      "id": 10,
-      "movieName": "The Beach"
-    }
-  ]
-}
+      {
+    "movies": [
+      {
+        "id": 1,
+        "movieName": "The Shawshank Redemption"
+      },
+      {
+        "id": 2,
+        "movieName": "City of God"
+      },
+      {
+        "id": 3,
+        "movieName": "Memento"
+      },
+      {
+        "id": 4,
+        "movieName": "The Intouchables"
+      },
+      {
+        "id": 5,
+        "movieName": "Stardust"
+      },
+      {
+        "id": 6,
+        "movieName": "Apocalypto"
+      },
+      {
+        "id": 7,
+        "movieName": "Taxi Driver"
+      },
+      {
+        "id": 8,
+        "movieName": "No Country for Old Men"
+      },
+      {
+        "id": 9,
+        "movieName": "Planet 51"
+      },
+      {
+        "id": 10,
+        "movieName": "The Beach"
+      }
+    ]
+  }
 
 ```
 
