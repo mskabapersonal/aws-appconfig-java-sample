@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.math.BigDecimal;
 import com.amazonaws.samples.appconfig.utils.Math;
+import java.math.RoundingMode;
 
 import static org.junit.Assert.assertEquals;
 

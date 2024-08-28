@@ -13,7 +13,8 @@ public class Security {
         java.security.cert.X509Certificate cert = null;
         try {
             InputStream inStream = new FileInputStream(certFile);
-            cert = X509Certificate.getInstance(inStream);
+            CertificateFactory cf = CertificateFactory.getInstance("X.509");
+            cert = (X509Certificate) cf.generateCertificate(inStream);
         } catch (java.security.cert.CertificateException e) {
             throw new RuntimeException(e);
         } catch (FileNotFoundException e) {
