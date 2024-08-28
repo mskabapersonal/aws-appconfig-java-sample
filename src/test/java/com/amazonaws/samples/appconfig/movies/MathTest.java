@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.math.BigDecimal;
 import com.amazonaws.samples.appconfig.utils.Math;
+import java.math.RoundingMode;
 
 import static org.junit.Assert.assertEquals;
 
@@ -18,14 +19,14 @@ public class MathTest {
         BigDecimal bd = BigDecimal.valueOf(10);
         BigDecimal bd2 = BigDecimal.valueOf(2);
         BigDecimal expectedResult1 = BigDecimal.valueOf(5);
-        assertEquals(expectedResult1, bd.divide(bd2, BigDecimal.ROUND_DOWN));
+        assertEquals(expectedResult1, bd.divide(bd2, RoundingMode.DOWN));
 
         // Test divide(BigDecimal, int)
         BigDecimal expectedResult2 = BigDecimal.valueOf(5.0);
 
         // Test divide(BigDecimal, int, int)
         BigDecimal expectedResult3 = BigDecimal.valueOf(5.0);
-        assertEquals(expectedResult3, bd.divide(bd2, 1, BigDecimal.ROUND_CEILING));
+        assertEquals(expectedResult3, bd.divide(bd2, 1, RoundingMode.CEILING));
 
         BigDecimal expectedResult4 = BigDecimal.valueOf(5.0);
         assertEquals(expectedResult4, bd.divide(bd2, 1, 1));
